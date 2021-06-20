@@ -25,4 +25,10 @@ public interface CommonItemFeignClient {
     @PostMapping("/service/itemCategory/selectItemCategoryByParentId")
     List<TbItemCat> selectItemCategoryByParentId(@RequestParam("id") Long id);
 
+    /**
+     * /Service/itemParam
+     * */
+    @PostMapping("/service/itemParam/selectItemParamByItemCatId")
+    TbItemParam selectItemParamByItemCatId(@RequestParam("itemCatId") Long itemCatId);
+
 }
