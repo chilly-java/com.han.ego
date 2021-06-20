@@ -3,7 +3,7 @@ spring:
     name: backend-item
 
 server:
-  port: 9030
+  port: 9011
 
 eureka:
   client:
